@@ -1,0 +1,8 @@
+dataset:https://data.world/jaypeedevlin/lending-club-loan-data-2007-11
+
+
+1.Get the data
+dataset = pd.read_csv("lending_club_loans.csv",skiprows=1,low_memory=False)
+skiprows:We have to use skip the first row which has some comment data.
+low_memory:Internally process the file in chunks, resulting in lower memory use while parsing, but possibly mixed type inference.
+To ensure no mixed types set False,
